@@ -1,0 +1,131 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* Styling for the header section */
+.header{
+    text-align: center;
+    margin: 20px 0 60px 0;
+    line-height: .9;
+}
+
+.header h1{
+    background-image: url(./Asset/mouakal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(4rem, 10vw, 60rem);
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.header span{
+    font-family: monospace;
+    font-size: clamp(2rem, 10vw, 4rem);
+}
+
+ /* Styling for the search form */
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 0 20px 0 20px;
+}
+
+form #search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+form #search-button{
+    padding: 10px 40px;
+    background-color: #5b12ad;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 6px;
+    margin-left: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+form #search-button:hover{
+    background-color: #801bf3;
+}
+
+/* Styling for the search results */
+.search-result-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.search-result{
+    margin-bottom: 60px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transition: 0.2s ease-in-out;
+}
+
+.search-result img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search-result:hover img{
+    opacity: 0.8;
+}
+
+.search-result a{
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.search-result a:hover{
+    color: #000;
+}
+
+ /* Styling for the "Show More" button */
+#show-more-button{
+    background-color: #5b12ad;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 40px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+#show-more-button:hover{
+    background-color: #801bf3;
+}
